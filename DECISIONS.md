@@ -104,3 +104,24 @@ One canonical technical repository prevents future version ambiguity while prese
 - The pricing repository owns application code, pricing data, catalog records, Supabase implementation, imports, and integrations.
 - Older working copies remain archives until the consolidated repository is reviewed and accepted.
 - Raw inputs, credentials, reports, and private exports remain local-only and are not committed.
+
+
+---
+
+# Decision 007 — Sprint 1 Begins With Company Foundation
+
+## Decision
+
+Sprint 1 will establish the Positive Printers Company Foundation before building product positioning, industry packages, marketing systems, sales systems, campaigns, or AI-agent training.
+
+## Rationale
+
+Those downstream knowledge areas need a consistent understanding of the company, its market, customers, differentiators, capabilities, voice, and operating boundaries.
+
+Starting with a read-only source inventory allows existing evidence to answer as much as possible before requesting owner validation.
+
+## Impact
+
+- Claude Code will be the primary implementation environment for Sprint 1.
+- Codex may support architecture, review, source-of-truth decisions, and cross-repository verification.
+- No Company Foundation content will be created until the source inventory and proposed structure receive human approval.

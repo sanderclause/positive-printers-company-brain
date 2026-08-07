@@ -6,13 +6,13 @@ Positive Printers Knowledge Core
 
 ## Current Status
 
-Status: Foundation setup with technical source consolidation complete
+Status: Sprint 1 implementation complete — pending pull-request review
 
 The Knowledge Core repository has been created to serve as the business source of truth for Positive Printers.
 
 This repository is separate from the Positive Printers Pricing application.
 
-The current focus is establishing the initial repository architecture, development standards, and source-of-truth boundaries before adding product, marketing, sales, or campaign knowledge.
+Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 built the Company Foundation from existing evidence. The canonical Company Foundation has been created and owner-approved (`01-Company-Foundation/Company-Foundation.md`), and the Sprint 1 branch is awaiting pull-request review and merge.
 
 The previously divergent Positive Printers application work has been consolidated into the canonical `positive-printers-pricing` repository. The consolidated technical source preserves the customer calculator, Catalog Admin, Supabase work, pricing data tools, and GoHighLevel integration boundaries without copying that implementation into the Knowledge Core.
 
@@ -74,7 +74,7 @@ Current consolidation review:
 
 # Current Sprint
 
-Sprint 0 — Repository Architecture & Business Knowledge Inventory
+Sprint 1 — Company Foundation
 
 See:
 
@@ -84,19 +84,16 @@ See:
 
 # Current Priorities
 
-1. Establish foundational repository files
-2. Define source-of-truth boundaries
-3. Map the initial repository structure
-4. Identify what belongs in the Knowledge Core versus the Pricing App
-5. Avoid duplicating product pricing, product option records, or technical logic
-6. Prepare the repository for future business knowledge migration
-7. Review and accept the consolidated technical repository before archiving older working copies
+1. Review and merge the Sprint 1 pull request
+2. Define Sprint 2 scope
+3. Archive older working copies once the consolidated technical repository is fully accepted
+
+Sprint 1 deliverables (complete): read-only source inventory, owner validation, and a canonical Company Foundation created and approved without duplicating the Pricing App.
 
 ---
 
 # Not Yet Started
 
-- Company foundation migration
 - Product positioning library
 - Product marketing angles
 - Industry packages
@@ -109,4 +106,4 @@ See:
 
 # Next Recommended Action
 
-Review the consolidated technical-repository boundary, then complete Sprint 0 by selecting the first business knowledge area for Sprint 1: Company Foundation, Product Positioning, or Industry Packages.
+Review and merge the Sprint 1 pull request, then define Sprint 2. A post-2020 customer and product opportunity analysis is a possible candidate for Sprint 2, but it has not yet been approved or started.
