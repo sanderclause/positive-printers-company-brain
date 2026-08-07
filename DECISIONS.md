@@ -76,3 +76,31 @@ The first sprint is Repository Architecture & Business Knowledge Inventory.
 ## Rationale
 
 Before importing or creating new knowledge, the repository needs clear structure, source-of-truth rules, and development standards.
+
+---
+
+# Decision 006 — One Canonical Technical Repository
+
+## Decision
+
+The GitHub repository `sanderclause/positive-printers-pricing` is the canonical technical source of truth for the Positive Printers pricing platform.
+
+The consolidated application preserves two distinct surfaces in that repository:
+
+1. `/` — customer-facing product selection and instant pricing
+2. `/admin/*` — staff-only catalog, pricing, asset, and migration administration
+
+GoHighLevel is the intended customer and job-operations platform, and related integration functionality exists in the consolidated application. Its current live operational status must be verified separately.
+
+## Rationale
+
+The technical work had diverged across separate Codex, Claude Code, Desktop, and Dropbox working copies while GitHub still contained only the initial scaffold.
+
+One canonical technical repository prevents future version ambiguity while preserving the established boundary between the Knowledge Core and application implementation.
+
+## Impact
+
+- The Knowledge Core continues to own business strategy and normalized business knowledge.
+- The pricing repository owns application code, pricing data, catalog records, Supabase implementation, imports, and integrations.
+- Older working copies remain archives until the consolidated repository is reviewed and accepted.
+- Raw inputs, credentials, reports, and private exports remain local-only and are not committed.
