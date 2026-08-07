@@ -6,13 +6,13 @@ Positive Printers Knowledge Core
 
 ## Current Status
 
-Status: Sprint 2 active — read-only launch audit
+Status: Sprint 2 active — Phase 2A verification and containment planning
 
 The Knowledge Core repository has been created to serve as the business source of truth for Positive Printers.
 
 This repository is separate from the Positive Printers Pricing application.
 
-Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 built and merged the canonical Company Foundation (`01-Company-Foundation/Company-Foundation.md`), which is now on `main`. Sprint 2 is approved and underway: launching the Positive Printers website and a new GoHighLevel-based order workflow, beginning with a read-only launch audit.
+Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 built and merged the canonical Company Foundation (`01-Company-Foundation/Company-Foundation.md`), which is now on `main`. Sprint 2's Phase 1 read-only launch audit is complete, and the owner has approved the operating architecture: HighLevel AI Studio as the future public website (not yet accepting real orders), Supabase as the product/pricing intelligence layer, and native HighLevel (Products, Estimates, Invoices, Workflows, Dashboards) as the operations system, with the existing Next.js estimate app preserved but not expanded into a parallel system. Phase 2A covers credential-exposure remediation planning, read-only HighLevel verification, and reuse auditing before any implementation.
 
 The previously divergent Positive Printers application work has been consolidated into the canonical `positive-printers-pricing` repository. The consolidated technical source preserves the customer calculator, Catalog Admin, Supabase work, pricing data tools, and GoHighLevel integration boundaries without copying that implementation into the Knowledge Core.
 
@@ -84,14 +84,15 @@ See:
 
 # Current Priorities
 
-1. Complete the Sprint 2 read-only launch audit across the Company Brain, Pricing App, GoHighLevel integration code, and Zoho workflow/migration utilities
-2. Determine the canonical customer-facing website and its current deployment status
-3. Distinguish GoHighLevel functionality that is implemented in code from functionality verified live in the account
-4. Use post-2020 order data to recommend an initial product launch set, without placing raw customer records in the Company Brain or GitHub
-5. Present the minimum viable order workflow, Zoho-to-GoHighLevel mapping, and pilot test plan for owner approval
-6. Archive older working copies once the consolidated technical repository is fully accepted
+1. Assess and plan remediation for exposed Supabase and Zoho credentials, without rotating them yet
+2. Correct the GoHighLevel documentation overstatement in the canonical pricing repository's README
+3. Verify HighLevel's actual account state (Products, estimate/invoice templates, pipelines, workflows, dashboards) read-only, where access permits
+4. Identify genuine native-HighLevel capability gaps rather than assuming a custom build is needed
+5. Audit the existing estimate app for reusable pricing/configuration logic without expanding it into a parallel system
+6. Confirm the safest reversible way to keep the unfinished HighLevel AI Studio website from accepting real orders
+7. Archive older working copies once the consolidated technical repository is fully accepted
 
-Sprint 1 deliverables (complete and merged): read-only source inventory, owner validation, and a canonical Company Foundation created and approved without duplicating the Pricing App.
+Sprint 1 deliverables (complete and merged): read-only source inventory, owner validation, and a canonical Company Foundation created and approved without duplicating the Pricing App. Sprint 2 Phase 1 (complete): read-only launch audit and owner-approved operating architecture.
 
 ---
 
@@ -109,4 +110,4 @@ Sprint 1 deliverables (complete and merged): read-only source inventory, owner v
 
 # Next Recommended Action
 
-Complete the Sprint 2 Phase 1 read-only launch audit, present the categorized findings and implementation plan, and stop for owner approval before any deployment, GoHighLevel configuration, database migration, DNS, or customer-facing change.
+Review the Sprint 2 Phase 2A findings (credential remediation plan, HighLevel verification results, capability-gap analysis, estimate-app reuse audit, and website-containment recommendation), then authorize Phase 2B implementation scope before any credential rotation, live HighLevel configuration change, website publish/unpublish, DNS change, data migration, or real estimate/invoice send.

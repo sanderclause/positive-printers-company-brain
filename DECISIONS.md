@@ -152,3 +152,31 @@ A minimum viable order workflow, validated with realistic orders and owner appro
 - Zoho data must not be disabled, deleted, overwritten, or bulk-migrated during this phase.
 - Reducing or ending reliance on Zoho requires explicit owner approval, conditioned on the new workflow being tested, fields mapped, staff able to manage requests, customer confirmations working, and no required information being lost.
 - Raw customer records, private contact information, order-level exports, and credentials must not be placed in the Company Brain or GitHub; only aggregated and owner-approved findings may become durable Company Brain knowledge.
+
+---
+
+# Decision 009 — HighLevel as Operations System, Supabase as Product/Pricing Intelligence Layer
+
+## Decision
+
+HighLevel is the operations system for contacts, opportunities, estimates, approvals, invoices, payments, workflows, and staff reporting. Native HighLevel Products, Estimates, Invoices, Workflows, and Dashboards are used wherever they meet the requirement, in preference to custom-built equivalents.
+
+Supabase remains the detailed product catalog, configuration, pricing, and historical-data layer, and is not the customer order/estimate/invoice system of record going forward.
+
+HighLevel AI Studio is the intended public Positive Printers website, but it remains pre-launch and must not accept real customer orders until the new workflow is validated.
+
+The separate estimate app (the Next.js Pricing App customer calculator) is preserved as-is for now. It is not expanded into a parallel estimating and invoicing system. It is audited only for reusable product-configuration and pricing components. If native HighLevel estimating later proves insufficient, the only additional build considered is a focused Print Configurator that sends calculated line items into native HighLevel estimates — not a general-purpose replacement system.
+
+## Rationale
+
+The owner reviewed the Sprint 2 Phase 1 read-only launch audit findings — including that substantial Zoho-to-Supabase migration work and Supabase-to-HighLevel mapping scaffolding already exist — and approved an architecture that reuses this existing work rather than building a second, competing order/estimate/invoice system alongside HighLevel.
+
+Building out the Next.js estimate app into a full estimating and invoicing system would duplicate capability HighLevel already provides natively, and would fragment the single system of record staff need to rely on.
+
+## Impact
+
+- Sprint 2 implementation work prioritizes verifying and reusing existing Zoho→Supabase and Supabase→HighLevel scaffolding over new design.
+- No new parallel estimating/invoicing system is built in the Next.js Pricing App.
+- The HighLevel AI Studio website stays contained (not accepting real orders) until the owner separately approves it going live.
+- Business Cards are the first instant-pricing launch product; other products begin as quote-request only.
+- Technical schemas, credentials, customer records, and detailed pricing logic are not placed in the Company Brain — this decision records the architecture, not its implementation detail.
