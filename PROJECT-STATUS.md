@@ -6,13 +6,13 @@ Positive Printers Knowledge Core
 
 ## Current Status
 
-Status: Sprint 1 implementation complete — pending pull-request review
+Status: Sprint 2 active — read-only launch audit
 
 The Knowledge Core repository has been created to serve as the business source of truth for Positive Printers.
 
 This repository is separate from the Positive Printers Pricing application.
 
-Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 built the Company Foundation from existing evidence. The canonical Company Foundation has been created and owner-approved (`01-Company-Foundation/Company-Foundation.md`), and the Sprint 1 branch is awaiting pull-request review and merge.
+Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 built and merged the canonical Company Foundation (`01-Company-Foundation/Company-Foundation.md`), which is now on `main`. Sprint 2 is approved and underway: launching the Positive Printers website and a new GoHighLevel-based order workflow, beginning with a read-only launch audit.
 
 The previously divergent Positive Printers application work has been consolidated into the canonical `positive-printers-pricing` repository. The consolidated technical source preserves the customer calculator, Catalog Admin, Supabase work, pricing data tools, and GoHighLevel integration boundaries without copying that implementation into the Knowledge Core.
 
@@ -74,7 +74,7 @@ Current consolidation review:
 
 # Current Sprint
 
-Sprint 1 — Company Foundation
+Sprint 2 — Website Launch and New Order Workflow
 
 See:
 
@@ -84,11 +84,14 @@ See:
 
 # Current Priorities
 
-1. Review and merge the Sprint 1 pull request
-2. Define Sprint 2 scope
-3. Archive older working copies once the consolidated technical repository is fully accepted
+1. Complete the Sprint 2 read-only launch audit across the Company Brain, Pricing App, GoHighLevel integration code, and Zoho workflow/migration utilities
+2. Determine the canonical customer-facing website and its current deployment status
+3. Distinguish GoHighLevel functionality that is implemented in code from functionality verified live in the account
+4. Use post-2020 order data to recommend an initial product launch set, without placing raw customer records in the Company Brain or GitHub
+5. Present the minimum viable order workflow, Zoho-to-GoHighLevel mapping, and pilot test plan for owner approval
+6. Archive older working copies once the consolidated technical repository is fully accepted
 
-Sprint 1 deliverables (complete): read-only source inventory, owner validation, and a canonical Company Foundation created and approved without duplicating the Pricing App.
+Sprint 1 deliverables (complete and merged): read-only source inventory, owner validation, and a canonical Company Foundation created and approved without duplicating the Pricing App.
 
 ---
 
@@ -106,4 +109,4 @@ Sprint 1 deliverables (complete): read-only source inventory, owner validation, 
 
 # Next Recommended Action
 
-Review and merge the Sprint 1 pull request, then define Sprint 2. A post-2020 customer and product opportunity analysis is a possible candidate for Sprint 2, but it has not yet been approved or started.
+Complete the Sprint 2 Phase 1 read-only launch audit, present the categorized findings and implementation plan, and stop for owner approval before any deployment, GoHighLevel configuration, database migration, DNS, or customer-facing change.

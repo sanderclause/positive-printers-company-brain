@@ -125,3 +125,30 @@ Starting with a read-only source inventory allows existing evidence to answer as
 - Claude Code will be the primary implementation environment for Sprint 1.
 - Codex may support architecture, review, source-of-truth decisions, and cross-repository verification.
 - No Company Foundation content will be created until the source inventory and proposed structure receive human approval.
+
+---
+
+# Decision 008 — Sprint 2 Priorities: Website Launch and New Order Workflow
+
+## Decision
+
+Website launch and a new customer order workflow are the immediate priorities for Positive Printers.
+
+GoHighLevel is the intended platform for the new customer order and job-operations workflow.
+
+Zoho remains the fallback and reference system during validation of the new workflow.
+
+No full migration of Zoho data or shutdown of Zoho is approved at this time.
+
+## Rationale
+
+The owner has approved Sprint 2 with the business objective of launching the Positive Printers website and beginning to take customer orders through a new GoHighLevel-based workflow as quickly and safely as possible, while avoiding a risky all-at-once migration.
+
+A minimum viable order workflow, validated with realistic orders and owner approval, is safer than migrating every product, historical record, automation, or production stage before launch.
+
+## Impact
+
+- Sprint 2 begins with a read-only launch audit; no deployment, GoHighLevel configuration, database migration, DNS, or customer-facing change is authorized until the owner approves the resulting implementation plan.
+- Zoho data must not be disabled, deleted, overwritten, or bulk-migrated during this phase.
+- Reducing or ending reliance on Zoho requires explicit owner approval, conditioned on the new workflow being tested, fields mapped, staff able to manage requests, customer confirmations working, and no required information being lost.
+- Raw customer records, private contact information, order-level exports, and credentials must not be placed in the Company Brain or GitHub; only aggregated and owner-approved findings may become durable Company Brain knowledge.
