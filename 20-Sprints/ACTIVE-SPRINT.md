@@ -86,6 +86,8 @@ Create and review:
 
 Define what belongs in the Knowledge Core and what belongs in the Pricing App.
 
+Status: Complete. The boundary is documented in the foundational files and confirmed by the 2026-08-07 technical consolidation.
+
 ## Task 3 — Define first knowledge migration target
 
 Choose the first business knowledge area to build after Sprint 0.
@@ -96,6 +98,23 @@ Recommended candidates:
 - Product Positioning
 - Industry Packages
 - Marketing Angles
+
+Status: Pending user selection.
+
+## Technical Consolidation Checkpoint
+
+The previously separate Pricing App and Catalog Admin working copies were consolidated on 2026-08-07 into `sanderclause/positive-printers-pricing`.
+
+The consolidation preserves:
+
+- Customer pricing calculator at `/`
+- Staff catalog administration at `/admin/*`
+- Supabase schemas, migrations, and seeds
+- Zoho import and pricing-generation utilities
+- GoHighLevel integration code
+- Local-only boundaries for raw inputs, private exports, reports, and credentials
+
+This checkpoint confirms the technical source-of-truth boundary. It does not migrate technical implementation into the Knowledge Core.
 
 ---
 
@@ -114,4 +133,4 @@ Sprint 0 is complete when:
 
 # Current Recommended Next Action
 
-Review the foundational files and confirm whether Sprint 1 should begin with Company Foundation, Product Positioning, or Industry Packages.
+Review draft PR `sanderclause/positive-printers-pricing#1`, then confirm whether Sprint 1 should begin with Company Foundation, Product Positioning, or Industry Packages.

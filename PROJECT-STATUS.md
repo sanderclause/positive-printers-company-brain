@@ -6,13 +6,15 @@ Positive Printers Knowledge Core
 
 ## Current Status
 
-Status: Foundation setup
+Status: Foundation setup with technical source consolidation complete
 
 The Knowledge Core repository has been created to serve as the business source of truth for Positive Printers.
 
 This repository is separate from the Positive Printers Pricing application.
 
 The current focus is establishing the initial repository architecture, development standards, and source-of-truth boundaries before adding product, marketing, sales, or campaign knowledge.
+
+The previously divergent Positive Printers application work has been consolidated into the canonical `positive-printers-pricing` repository. The consolidated technical source preserves the customer calculator, Catalog Admin, Supabase work, pricing data tools, and GoHighLevel integration boundaries without copying that implementation into the Knowledge Core.
 
 ---
 
@@ -61,6 +63,13 @@ Purpose:
 - Next.js application
 - Admin tools
 
+Current consolidation review:
+
+- GitHub draft PR: `sanderclause/positive-printers-pricing#1`
+- Customer calculator: `/`
+- Staff catalog administration: `/admin/*`
+- Local raw inputs and private exports: ignored technical-repository material, not Knowledge Core content
+
 ---
 
 # Current Sprint
@@ -81,6 +90,7 @@ See:
 4. Identify what belongs in the Knowledge Core versus the Pricing App
 5. Avoid duplicating product pricing, product option records, or technical logic
 6. Prepare the repository for future business knowledge migration
+7. Review and accept the consolidated technical repository before archiving older working copies
 
 ---
 
@@ -99,4 +109,4 @@ See:
 
 # Next Recommended Action
 
-Complete Sprint 0 by reviewing the initial repository structure, confirming the file map, and defining the first business knowledge area to migrate.
+Review the consolidated technical-repository boundary, then complete Sprint 0 by selecting the first business knowledge area for Sprint 1: Company Foundation, Product Positioning, or Industry Packages.
