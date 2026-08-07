@@ -4,7 +4,7 @@
 
 ## Sprint Status
 
-Active — source inventory phase
+Complete — pending pull-request review
 
 ---
 
@@ -38,7 +38,7 @@ Normalized company identity, positioning, market focus, operating context, and e
 
 # Existing Platforms and Sources
 
-The source inventory may inspect these locations read-only:
+The source inventory inspected these locations read-only:
 
 - The Positive Printers Knowledge Core
 - The canonical `positive-printers-pricing` repository
@@ -56,31 +56,51 @@ The Pricing App remains authoritative for prices, product records, database stru
 
 ## Phase 1 — Read-only source inventory
 
-Claude Code should:
+Status: Complete.
+
+Claude Code:
 
 1. Read all required governance files.
-2. Inventory relevant source locations without moving, renaming, deleting, or rewriting files.
-3. Identify candidate evidence for company identity, history, mission, values, positioning, markets, customer types, differentiators, capabilities, voice, and operating boundaries.
-4. Separate confirmed facts from reasonable inferences and unresolved questions.
-5. Identify duplicates, conflicts, stale material, and information that belongs in the Pricing App instead.
-6. Report findings and propose the smallest canonical Company Foundation structure.
-7. Stop for human approval before creating Company Foundation content.
+2. Inventoried relevant source locations without moving, renaming, deleting, or rewriting files.
+3. Identified candidate evidence for company identity, history, mission, values, positioning, markets, customer types, differentiators, capabilities, voice, and operating boundaries.
+4. Separated confirmed facts from reasonable inferences and unresolved questions.
+5. Identified duplicates, conflicts, stale material, and information that belongs in the Pricing App instead.
+6. Reported findings and proposed the smallest canonical Company Foundation structure.
+7. Stopped for human approval before creating Company Foundation content.
 
 ## Phase 2 — Canonical Company Foundation
 
-After approval, Claude Code should create or update the minimum number of files needed under `01-Company-Foundation/`.
+Status: Complete.
 
-Prefer one strong canonical file over several thin files. Every durable claim should be traceable to a source, an owner confirmation, or a clearly labeled assumption.
+After owner approval, Claude Code created `01-Company-Foundation/Company-Foundation.md` as the single canonical file. Every durable claim is traceable to a source, an owner confirmation, or a clearly labeled assumption.
 
 ## Phase 3 — Validation and normalization
 
-Claude Code should:
+Status: Complete.
 
-1. Check the Company Foundation against repository boundaries and decisions.
-2. Remove duplication and unsupported claims.
-3. Confirm that no pricing tables, product records, credentials, client-private data, or technical implementation were copied into the Knowledge Core.
-4. Present unresolved questions as a short owner-validation list.
-5. Update project status and the active sprint only after the approved content is complete.
+Claude Code:
+
+1. Checked the Company Foundation against repository boundaries and decisions.
+2. Removed duplication and unsupported claims.
+3. Confirmed that no pricing tables, product records, credentials, client-private data, or technical implementation were copied into the Knowledge Core.
+4. Presented unresolved questions as a short owner-validation list, which the owner reviewed and answered.
+5. Updated project status and the active sprint to reflect completion.
+
+---
+
+# Completion Summary
+
+- Canonical Company Foundation created and owner-approved.
+- Pricing and application implementation kept outside the Company Brain.
+- Positive AI Marketing documented as a sister business.
+- PAiMOS and PPMOS boundaries documented.
+
+---
+
+# Remaining Non-Blocking Validation Items
+
+- Confirm official legal paperwork before using the company identity in contracts, tax filings, or legal/financial applications.
+- IllumaPrints taxonomy remains a low-priority product-catalog question outside the Company Foundation.
 
 ---
 
@@ -109,8 +129,10 @@ Sprint 1 is complete when:
 6. Conflicts and unresolved questions are documented concisely.
 7. `PROJECT-STATUS.md`, `DECISIONS.md`, and this sprint file accurately reflect completion.
 
+All criteria above have been met.
+
 ---
 
 # Current Recommended Next Action
 
-Use Claude Code to complete Phase 1 as a read-only audit, present the source inventory and proposed Company Foundation structure, and stop for approval.
+Review and merge the Sprint 1 pull request, then define Sprint 2. The recommended next strategic project is a post-2020 customer and product opportunity analysis.

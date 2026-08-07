@@ -30,6 +30,10 @@ Reference technical sources when useful; do not copy their technical data into t
 - Do not place credentials, client-private data, or raw exports in this repository.
 - End each work session with changes made, decisions made, files needing updates, and the next recommended action.
 
-## Current Sprint 1 instruction
+## Current Sprint 1 status
 
-Begin with the read-only source inventory in `20-Sprints/ACTIVE-SPRINT.md`. Present findings and the proposed canonical Company Foundation structure, then stop for human approval before creating Company Foundation content.
+Sprint 1 Company Foundation work is complete and awaiting pull-request review.
+
+Do not repeat the source inventory or recreate `Company-Foundation.md`. Preserve the approved Company Foundation unless the owner requests a revision.
+
+The likely next project is a post-2020 customer and product opportunity analysis, but Sprint 2 has not yet been formally approved.

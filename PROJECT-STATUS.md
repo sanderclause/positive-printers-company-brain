@@ -6,13 +6,13 @@ Positive Printers Knowledge Core
 
 ## Current Status
 
-Status: Sprint 1 active — Company Foundation source inventory
+Status: Sprint 1 implementation complete — pending pull-request review
 
 The Knowledge Core repository has been created to serve as the business source of truth for Positive Printers.
 
 This repository is separate from the Positive Printers Pricing application.
 
-Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 now focuses on building the Company Foundation from existing evidence.
+Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 built the Company Foundation from existing evidence. The canonical Company Foundation has been created and owner-approved (`01-Company-Foundation/Company-Foundation.md`), and the Sprint 1 branch is awaiting pull-request review and merge.
 
 The previously divergent Positive Printers application work has been consolidated into the canonical `positive-printers-pricing` repository. The consolidated technical source preserves the customer calculator, Catalog Admin, Supabase work, pricing data tools, and GoHighLevel integration boundaries without copying that implementation into the Knowledge Core.
 
@@ -84,12 +84,11 @@ See:
 
 # Current Priorities
 
-1. Complete a read-only inventory of existing Positive Printers business sources
-2. Identify evidence for company identity, positioning, markets, customer types, differentiators, capabilities, and voice
-3. Separate confirmed facts, inferences, conflicts, and `needs_validation` items
-4. Approve the smallest canonical Company Foundation structure
-5. Create normalized Company Foundation content without duplicating the Pricing App
-6. Review and accept the consolidated technical repository before archiving older working copies
+1. Review and merge the Sprint 1 pull request
+2. Define Sprint 2 scope
+3. Archive older working copies once the consolidated technical repository is fully accepted
+
+Sprint 1 deliverables (complete): read-only source inventory, owner validation, and a canonical Company Foundation created and approved without duplicating the Pricing App.
 
 ---
 
@@ -107,4 +106,4 @@ See:
 
 # Next Recommended Action
 
-Use Claude Code to complete Sprint 1 Phase 1 as a read-only source inventory. Review its findings and proposed Company Foundation structure before authorizing content creation.
+Review and merge the Sprint 1 pull request, then define Sprint 2. A post-2020 customer and product opportunity analysis is a possible candidate for Sprint 2, but it has not yet been approved or started.
