@@ -6,13 +6,13 @@ Positive Printers Knowledge Core
 
 ## Current Status
 
-Status: Foundation setup with technical source consolidation complete
+Status: Sprint 1 active — Company Foundation source inventory
 
 The Knowledge Core repository has been created to serve as the business source of truth for Positive Printers.
 
 This repository is separate from the Positive Printers Pricing application.
 
-The current focus is establishing the initial repository architecture, development standards, and source-of-truth boundaries before adding product, marketing, sales, or campaign knowledge.
+Sprint 0 established the repository architecture, development standards, and source-of-truth boundaries. Sprint 1 now focuses on building the Company Foundation from existing evidence.
 
 The previously divergent Positive Printers application work has been consolidated into the canonical `positive-printers-pricing` repository. The consolidated technical source preserves the customer calculator, Catalog Admin, Supabase work, pricing data tools, and GoHighLevel integration boundaries without copying that implementation into the Knowledge Core.
 
@@ -74,7 +74,7 @@ Current consolidation review:
 
 # Current Sprint
 
-Sprint 0 — Repository Architecture & Business Knowledge Inventory
+Sprint 1 — Company Foundation
 
 See:
 
@@ -84,19 +84,17 @@ See:
 
 # Current Priorities
 
-1. Establish foundational repository files
-2. Define source-of-truth boundaries
-3. Map the initial repository structure
-4. Identify what belongs in the Knowledge Core versus the Pricing App
-5. Avoid duplicating product pricing, product option records, or technical logic
-6. Prepare the repository for future business knowledge migration
-7. Review and accept the consolidated technical repository before archiving older working copies
+1. Complete a read-only inventory of existing Positive Printers business sources
+2. Identify evidence for company identity, positioning, markets, customer types, differentiators, capabilities, and voice
+3. Separate confirmed facts, inferences, conflicts, and `needs_validation` items
+4. Approve the smallest canonical Company Foundation structure
+5. Create normalized Company Foundation content without duplicating the Pricing App
+6. Review and accept the consolidated technical repository before archiving older working copies
 
 ---
 
 # Not Yet Started
 
-- Company foundation migration
 - Product positioning library
 - Product marketing angles
 - Industry packages
@@ -109,4 +107,4 @@ See:
 
 # Next Recommended Action
 
-Review the consolidated technical-repository boundary, then complete Sprint 0 by selecting the first business knowledge area for Sprint 1: Company Foundation, Product Positioning, or Industry Packages.
+Use Claude Code to complete Sprint 1 Phase 1 as a read-only source inventory. Review its findings and proposed Company Foundation structure before authorizing content creation.
