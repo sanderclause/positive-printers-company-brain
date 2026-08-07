@@ -90,7 +90,7 @@ The consolidated application preserves two distinct surfaces in that repository:
 1. `/` — customer-facing product selection and instant pricing
 2. `/admin/*` — staff-only catalog, pricing, asset, and migration administration
 
-GoHighLevel remains the operations system for production stages, live job management, client access, and automations.
+GoHighLevel is the intended customer and job-operations platform, and related integration functionality exists in the consolidated application. Its current live operational status must be verified separately.
 
 ## Rationale
 
