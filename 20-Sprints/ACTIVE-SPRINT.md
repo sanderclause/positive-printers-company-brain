@@ -1,26 +1,26 @@
 # Active Sprint
 
-## Sprint 0 — Repository Architecture & Business Knowledge Inventory
+## Sprint 1 — Company Foundation
 
 ## Sprint Status
 
-Active
+Active — source inventory phase
 
 ---
 
 # Sprint Objective
 
-Establish the foundation for the Positive Printers Knowledge Core before adding business knowledge.
+Create the first normalized Company Foundation for Positive Printers using existing evidence rather than interviewing the owner from scratch.
 
-The goal is to define repository structure, source-of-truth boundaries, development standards, and the relationship between the Knowledge Core and the Positive Printers Pricing application.
+The result should give future product, marketing, sales, campaign, proposal, and AI-agent work a consistent understanding of the company without duplicating pricing data or application implementation.
 
 ---
 
 # Business Problem
 
-Positive Printers has product knowledge, pricing knowledge, marketing opportunities, and application logic spread across different places.
+Positive Printers business knowledge exists across project folders, documents, images, historical application work, and the owner's working knowledge.
 
-Without a clear business knowledge layer, future AI agents, marketing campaigns, sales materials, proposals, and industry packages may become inconsistent or duplicate information already stored in the Pricing App.
+Without a canonical Company Foundation, future agents may infer inconsistent positioning, invent unsupported claims, or repeatedly ask questions that existing materials can answer.
 
 ---
 
@@ -32,105 +32,85 @@ Positive Printers Knowledge Core
 
 # Capability
 
-Repository architecture and business knowledge governance.
+Normalized company identity, positioning, market focus, operating context, and evidence traceability.
 
 ---
 
-# Existing Platform
+# Existing Platforms and Sources
 
-The Positive Printers Pricing application already exists and owns:
+The source inventory may inspect these locations read-only:
 
-- Product pricing
-- Product options
-- Product catalog records
-- Database schema
-- Supabase implementation
-- APIs
-- Next.js application logic
-- Pricing calculations
+- The Positive Printers Knowledge Core
+- The canonical `positive-printers-pricing` repository
+- `Product Specific Images`
+- `Positive Printers File Organization`
+- The pre-consolidation Pricing App archive
+- The superseded Catalog Admin and Cost Consolidate folders
+- Other clearly relevant Positive Printers business documents discovered in the Claude Code project structure
 
----
-
-# Business Knowledge Scope
-
-The Knowledge Core should own:
-
-- Business strategy
-- Company foundation
-- Product positioning
-- Marketing systems
-- Sales systems
-- Industry packages
-- Campaigns
-- AI agent training
-- Business processes
-- Proposal and presentation frameworks
+The Pricing App remains authoritative for prices, product records, database structure, Supabase logic, APIs, and technical implementation.
 
 ---
 
-# Sprint Tasks
+# Sprint Workflow
 
-## Task 1 — Establish foundational files
+## Phase 1 — Read-only source inventory
 
-Create and review:
+Claude Code should:
 
-- `README.md`
-- `AI-BOOT.md`
-- `PROJECT-STATUS.md`
-- `REPOSITORY-MAP.md`
-- `DEVELOPMENT-STANDARDS.md`
-- `DECISIONS.md`
-- `20-Sprints/ACTIVE-SPRINT.md`
+1. Read all required governance files.
+2. Inventory relevant source locations without moving, renaming, deleting, or rewriting files.
+3. Identify candidate evidence for company identity, history, mission, values, positioning, markets, customer types, differentiators, capabilities, voice, and operating boundaries.
+4. Separate confirmed facts from reasonable inferences and unresolved questions.
+5. Identify duplicates, conflicts, stale material, and information that belongs in the Pricing App instead.
+6. Report findings and propose the smallest canonical Company Foundation structure.
+7. Stop for human approval before creating Company Foundation content.
 
-## Task 2 — Confirm repository boundaries
+## Phase 2 — Canonical Company Foundation
 
-Define what belongs in the Knowledge Core and what belongs in the Pricing App.
+After approval, Claude Code should create or update the minimum number of files needed under `01-Company-Foundation/`.
 
-Status: Complete. The boundary is documented in the foundational files and confirmed by the 2026-08-07 technical consolidation.
+Prefer one strong canonical file over several thin files. Every durable claim should be traceable to a source, an owner confirmation, or a clearly labeled assumption.
 
-## Task 3 — Define first knowledge migration target
+## Phase 3 — Validation and normalization
 
-Choose the first business knowledge area to build after Sprint 0.
+Claude Code should:
 
-Recommended candidates:
+1. Check the Company Foundation against repository boundaries and decisions.
+2. Remove duplication and unsupported claims.
+3. Confirm that no pricing tables, product records, credentials, client-private data, or technical implementation were copied into the Knowledge Core.
+4. Present unresolved questions as a short owner-validation list.
+5. Update project status and the active sprint only after the approved content is complete.
 
-- Company Foundation
-- Product Positioning
-- Industry Packages
-- Marketing Angles
+---
 
-Status: Pending user selection.
+# Constraints
 
-## Technical Consolidation Checkpoint
-
-The previously separate Pricing App and Catalog Admin working copies were consolidated on 2026-08-07 into `sanderclause/positive-printers-pricing`.
-
-The consolidation preserves:
-
-- Customer pricing calculator at `/`
-- Staff catalog administration at `/admin/*`
-- Supabase schemas, migrations, and seeds
-- Zoho import and pricing-generation utilities
-- GoHighLevel integration code
-- Local-only boundaries for raw inputs, private exports, reports, and credentials
-
-This checkpoint confirms the technical source-of-truth boundary. It does not migrate technical implementation into the Knowledge Core.
+- Do not interview the owner from scratch.
+- Do not copy the Positive AI Marketing company brain and rename it.
+- Reuse its governance and normalization discipline, not its company-specific content.
+- Do not move or delete source material during the inventory.
+- Do not duplicate Pricing App data or technical documentation.
+- Do not treat filenames, folder placement, or old drafts as proof that a claim is current.
+- Mark uncertain information as `needs_validation`.
+- Preserve one concept in one canonical location.
 
 ---
 
 # Acceptance Criteria
 
-Sprint 0 is complete when:
+Sprint 1 is complete when:
 
-1. Foundational files exist.
-2. Source-of-truth boundaries are documented.
-3. Repository map is approved.
-4. Development standards are approved.
-5. First Sprint 1 focus area is selected.
-6. No duplicate pricing or technical data has been added.
+1. A read-only source inventory has been reviewed and approved.
+2. A canonical Company Foundation exists under `01-Company-Foundation/`.
+3. Company identity, positioning, market focus, customer types, differentiators, capabilities, voice, and operating boundaries are covered or explicitly marked `needs_validation`.
+4. Durable claims are traceable to evidence or owner confirmation.
+5. No pricing or technical implementation has been duplicated.
+6. Conflicts and unresolved questions are documented concisely.
+7. `PROJECT-STATUS.md`, `DECISIONS.md`, and this sprint file accurately reflect completion.
 
 ---
 
 # Current Recommended Next Action
 
-Review draft PR `sanderclause/positive-printers-pricing#1`, then confirm whether Sprint 1 should begin with Company Foundation, Product Positioning, or Industry Packages.
+Use Claude Code to complete Phase 1 as a read-only audit, present the source inventory and proposed Company Foundation structure, and stop for approval.
